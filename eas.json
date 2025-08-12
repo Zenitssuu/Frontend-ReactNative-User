@@ -1,0 +1,43 @@
+{
+  "cli": {
+    "version": ">= 16.13.4",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "development",
+      "env": {
+        "APP_VARIANT": "development",
+        "EXPO_PUBLIC_API_URL": "http://172.16.14.75:3000/api",
+        "GOOGLE_SERVICES_JSON_GEN": "GOOGLE_SERVICES_JSON_GEN"
+      },
+      "android": {
+        "gradleCommand": ":app:assembleDebug"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "APP_VARIANT": "preview",
+        "EXPO_PUBLIC_API_URL": "http://172.16.14.75:3000/api",
+        "GOOGLE_SERVICES_JSON_GEN": "GOOGLE_SERVICES_JSON_GEN"
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "APP_VARIANT": "production",
+        "EXPO_PUBLIC_API_URL": "https://api.tellyoudoc.com/api/v1",
+        "GOOGLE_SERVICES_JSON_GEN": "GOOGLE_SERVICES_JSON_GEN"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
