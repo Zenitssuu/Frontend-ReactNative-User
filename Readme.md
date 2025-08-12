@@ -1,4 +1,4 @@
-# TellYouDoc App Workflow Documentation
+# EasyMeds App Workflow Documentation
 
 ## Table of Contents
 
@@ -11,7 +11,7 @@
 
 ## App Overview
 
-TellYouDoc is a mobile application designed to streamline the doctor-patient communication process. The app allows users to:
+EasyMeds is a mobile application designed to streamline the doctor-patient communication process. The app allows users to:
 
 - Connect with doctors via QR code scanning or saved list
 - Record symptoms before appointments
